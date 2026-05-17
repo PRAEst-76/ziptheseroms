@@ -42,6 +42,7 @@ for ext in "$@"; do
             echo "Success: $zipfile"
 
             mv -- "$file" "$BACKUP_DIR"/
+	    echo "$file moved to $BACKUP_DIR"
         else
             echo "FAILED: $file"
 
